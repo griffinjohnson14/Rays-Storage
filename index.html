@@ -1,114 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ray's Self Storage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <title>Ray's Self Storage</title>
-        <link rel="preconnect" href="https:fonts.goggleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<header>
+  <nav class="wrap">
+    <div class="logo">RAY'S SELF STORAGE <span class="tag">EST. 50+ YRS</span></div>
+    <button class="nav-toggle" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
+    <ul id="navlinks">
+      <li><a href="#features">Why Us</a></li>
+      <li><a href="#sizes">Sizes &amp; Rates</a></li>
+      <li><a href="#access">Gate Access</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <body>
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Family-Owned &middot; 50+ Years Running</span>
+    <h1>Somewhere for the stuff<br><span>you're not ready to lose.</span></h1>
+    <p class="lead">Small, secure units for the boxes, keepsakes, and equipment that don't have room at home anymore: gated, coded, and looked after by a family that's on site, not a call center three states away.</p>
+    <div class="cta-row">
+      <a href="#sizes" class="btn btn-primary">See Sizes &amp; Rates</a>
+      <a href="#contact" class="btn btn-ghost">Ask About a Space</a>
+    </div>
+  </div>
+</section>
+<div class="corrugated"></div>
 
-        <header>
-            <nav class="wrap">
-                <div class="logo">Ray's <span class="tag">STORAGE YARD</span></div>
-                <button class="nav-toggle" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
-                <ul id="navlinks">
-                    <li><a href="#features">Why Us</a></li>
-                    <li><a href="#sizes">Sizes &amp; Rates</a></li>
-                    <li><a href="#access">Gate Access</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+<section id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Why store it here</span>
+      <h2>Built for the stuff that doesn't fit at home.</h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <span class="num">01</span>
+        <h3>Gated &amp; Coded</h3>
+        <p>Your own gate code gets you in from 7AM&ndash;7PM, 365 days a year, no shared keys to keep track of.</p>
+      </div>
+      <div class="feature">
+        <span class="num">02</span>
+        <h3>Easy In, Easy Out</h3>
+        <p>Walk or drive right up to your unit. No elevators, no long hallways to haul boxes down.</p>
+      </div>
+      <div class="feature">
+        <span class="num">03</span>
+        <h3>Month-to-Month</h3>
+        <p>No long contracts. Rent what you need for as long as you need it.</p>
+      </div>
+      <div class="feature">
+        <span class="num">04</span>
+        <h3>Local Ownership</h3>
+        <p>Family owned and operated in El Dorado for over 50 years, so questions get answered by a real person.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="hero">
-        <div class="wrap">
-            <span class="eyebrow">Family-Owned &middot; Locally Run</span>
-            <h1>Somewhere for the stuff<br><span>you're not ready to lose.</span></h1>
-            <p class="lead">Small, secure units for the boxes, keepsakes, and equipment that don't have room at home anymore: gated, coded, and looked after by a family that cares and works
-                on site, not a call center three states away. </p>
-            <div class="cta-row">
-                <a href="#sizes" class="btn btn-primary">See Sizes &amp; Rates</a>
-                <a href="#contact" class="btn btn-ghost">Ask About a Space</a>
-            </div>
-        </div>
-    </section>
-    <div class="corrugated"></div>
+<section id="sizes" class="board-section">
+  <div class="wrap">
+    <div class="section-head" style="max-width:640px;">
+      <span class="kicker" style="color:var(--rust);">Directory</span>
+      <h2 style="color:var(--sand);">Pick your space.</h2>
+      <p style="color:rgba(231,224,210,0.75);">Nine sizes, from a closet's worth to a houseful. Pick what fits.</p>
+    </div>
+    <div class="board">
+      <div class="bolt" style="top:14px;left:14px;"></div>
+      <div class="bolt" style="top:14px;right:14px;"></div>
+      <div class="bolt" style="bottom:14px;left:14px;"></div>
+      <div class="bolt" style="bottom:14px;right:14px;"></div>
+      <div class="board-inner">
+        <div class="board-title">&middot; Unit Directory &middot;</div>
+        <table class="sizes">
+          <tr><th>Unit</th><th>Fits</th><th>Rate</th></tr>
+          <tr><td>5 &times; 5</td><td class="fit">A closet's worth: boxes, seasonal décor</td><td>$60/mo</td></tr>
+          <tr><td>5 &times; 10</td><td class="fit">A small room: furniture, totes, equipment</td><td>$80/mo</td></tr>
+          <tr><td>10 &times; 10</td><td class="fit">A bedroom's worth: furniture, appliances, boxes</td><td>$120/mo</td></tr>
+          <tr><td>10 &times; 15</td><td class="fit">Multiple rooms: larger furniture, overflow</td><td>$145/mo</td></tr>
+          <tr><td>8 &times; 10</td><td class="fit">A large room: bulkier furniture and equipment</td><td>$155/mo</td></tr>
+          <tr><td>10 &times; 20</td><td class="fit">A full room's worth: appliances, larger furniture</td><td>$180/mo</td></tr>
+          <tr><td>10 &times; 25</td><td class="fit">Bulk inventory, multi-room overflow</td><td>$240/mo</td></tr>
+          <tr><td>10 &times; 30</td><td class="fit">A houseful: large furniture and equipment</td><td>$280/mo</td></tr>
+          <tr><td>10 &times; 40</td><td class="fit">Extra-large needs</td><td>Talk to manager</td></tr>
+        </table>
+        <div class="board-note">RATES SUBJECT TO CHANGE. CALL FOR CURRENT AVAILABILITY</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="features">
-        <div class="wrap">
-            <div class="section-head">
-                <span class="kicker">Why store it here</span>
-                <h2>Built for the stuff that doesn't fit at home.</h2>
-            </div>
-            <div class="features">
-                <div class="feature">
-                    <span class="num">01</span>
-                    <h3>Gated &amp; Coded</h3>
-                    <p>Your own keypad code gets you in - no shared keys, no office hours to work around.</p>
-                </div>
-                <div class="feature">
-                    <span class="num">03</span>
-                    <h3>Month-to-Month</h3>
-                    <p>No long contracts. Rent what you need for as long as you need it.</p>
-                </div>
-                <div class="feature">
-                    <span class="num">04</span>
-                    <h3>Local Ownership</h3>
-                    <p>Same family runs the yard day to day - questions get answered by a real person.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="access">
+  <div class="wrap access">
+    <div class="keypad">
+      <div class="screen">* &ndash; &ndash; &ndash; *</div>
+      <div class="grid">
+        <div class="key">1</div><div class="key">2</div><div class="key">3</div>
+        <div class="key">4</div><div class="key">5</div><div class="key">6</div>
+        <div class="key">7</div><div class="key">8</div><div class="key">9</div>
+        <div class="key">*</div><div class="key">0</div><div class="key accent">#</div>
+      </div>
+    </div>
+    <div class="access-copy">
+      <span class="kicker">Getting in</span>
+      <h2>Your code. Your hours.</h2>
+      <ul>
+        <li><span class="mark">&rarr;</span> Every tenant gets a personalized gate code, good from 7AM to 7PM, 365 days a year.</li>
+        <li><span class="mark">&rarr;</span> 24/7 video coverage, plus an onsite apartment, means the property's never really unattended.</li>
+        <li><span class="mark">&rarr;</span> We check every unit's lock daily, so things stay exactly how you left them.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <section id="sizes" class="board-section">
-        <div class="wrap">
-            <div class="section-head" style="max-width:640px;">
-                <span class="kicker" style=color:var(--rust);>Directory</span>
-                <h2 style="color:var(--sand);">Pick your space.</h2>
-                <p style="color:rgba(231,224,210,0.75);">Nine sizes, from a closet's worth to a houseful - pick what fits.</p>
-            </div>  
-            <div class="board">
-                <div class="bolt" style="top:14px;left:14px;"></div>
-                <div class="bolt" style="top:14px;right:14px;"></div>
-                <div class="bolt" style="bottom:14px;left:14px;"></div>
-                <div class="bolt" style="bottom:14px;right:14px;"></div>
-                    <div class="board-inner">
-                        <div class="board-title">- Unit Directory -</div>
-                        <table class="sizes">
-                            <tr><th>Unit</th><th>Fits</th><th>Rate</th></tr>
-                            <tr><td>5 &times; 5</td><td class="fit">A closet's worth — boxes, seasonal décor</td><td>$60/mo</td></tr>
-                            <tr><td>5 &times; 10</td><td class="fit">A small room — furniture, totes, equipment</td><td>$80/mo</td></tr>
-                            <tr><td>10 &times; 10</td><td class="fit">A bedroom's worth — furniture, appliances, boxes</td><td>$120/mo</td></tr>
-                            <tr><td>10 &times; 15</td><td class="fit">Multiple rooms — larger furniture, overflow</td><td>$145/mo</td></tr>
-                            <tr><td>8 &times; 10</td><td class="fit">A large room — bulkier furniture and equipment</td><td>$155/mo</td></tr>
-                            <tr><td>10 &times; 20</td><td class="fit">A full room's worth — appliances, larger furniture</td><td>$180/mo</td></tr>
-                            <tr><td>10 &times; 25</td><td class="fit">Bulk inventory, multi-room overflow</td><td>$240/mo</td></tr>
-                            <tr><td>10 &times; 30</td><td class="fit">A houseful — large furniture and equipment</td><td>$280/mo</td></tr>
-                            <tr><td>10 &times; 40</td><td class="fit">Extra-large needs</td><td>Talk to manager</td></tr>
-                        </table>
-                        <div class="board-note">RATES SUBJECT TO CHANGE - CALL FOR CURRENT AVAILABILITY</div>
-                    </div>
-                </div>
-            </div>
-    </section>
+<section class="about">
+  <div class="wrap">
+    <div>
+      <span class="kicker">The short version</span>
+      <h2>Run by a family, not a franchise.</h2>
+      <p>Family owned and operated right here in El Dorado for over 50 years, for business and personal needs alike. We believe your possessions are precious. Keeping them safe isn't a slogan, it's daily practice.</p>
+    </div>
+    <div class="stat-block">
+      <div class="stat"><div class="n">9</div><div class="l">Unit Sizes</div></div>
+      <div class="stat"><div class="n">7&ndash;7</div><div class="l">Gate Hours Daily</div></div>
+      <div class="stat"><div class="n">0</div><div class="l">Long Contracts</div></div>
+      <div class="stat"><div class="n">50+</div><div class="l">Years Family-Run</div></div>
+    </div>
+  </div>
+</section>
 
-    <section id="access">
-        
-    </section>
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Get in touch</span>
+      <h2>Ask about a space.</h2>
+      <div class="contact-info">
+        <div><span class="l">Phone</span>530-622-5449</div>
+        <div><span class="l">Email</span>raysstorall@gmail.com</div>
+        <div><span class="l">Address</span>5714 Pleasant Valley Road, El Dorado, CA 95623</div>
+        <div><span class="l">Office Hours</span>Mon&ndash;Fri 9&ndash;5, Sat 9&ndash;noon, Closed Sun</div>
+        <div><span class="l">Gate Hours</span>7AM&ndash;7PM, 7 days a week</div>
+      </div>
+    </div>
+    <div class="contact-actions">
+      <p>Quickest way to reach us</p>
+      <a href="tel:5306225449" class="btn btn-primary">Call (530) 622-5449</a>
+      <a href="mailto:raysstorall@gmail.com" class="btn btn-ghost">Email Us</a>
+    </div>
+  </div>
+</section>
 
+<footer>
+  <div class="wrap">&copy; 2026 Ray's Self Storage, LLC. All rights reserved.</div>
+</footer>
 
-
-
-    </body>
-
-
-
-
-
-
+</body>
 </html>
